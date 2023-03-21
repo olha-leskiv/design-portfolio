@@ -6,7 +6,7 @@
     --link-gray: #b9b9b9;
     --button-hover: #303030;
     --case-margin: 30vh;
-    --case-margin-portrait: 15vh;
+    --case-margin-portrait: 8vh;
 } 
 
 /* Global */
@@ -59,13 +59,13 @@ a.button:hover {
 /* Fonts */
 
 h1 {
-    font-size: clamp(3rem, 6vh, 5rem);
+    font-size: clamp(3rem, 14vw, 5.25rem);
     font-weight: 400;
     line-height: 122%;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 5vh, 3.75rem);
+    font-size: clamp(1.5rem, 9vw, 3.75rem);
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0em;
@@ -88,7 +88,7 @@ h4 {
 
 p.big {
     font-family: 'PT Sans', sans-serif;
-    font-size: clamp(1rem, 2.7vh, 1.8rem);
+    font-size: clamp(1rem, 5vw, 1.8rem);
     font-weight: 400;
     line-height: 160%;
 }
@@ -186,14 +186,14 @@ p.logo {
 
 .similar-cases {
     background-color: white;
-    padding-top: 160px; 
-    padding-bottom: 120px; 
 }
 
 .similar-cases__inner {
     display: flex;
     justify-content: space-between;
     gap: 80px;
+    padding-top: 160px; 
+    padding-bottom: 160px; 
 }
 
 .similar-cases__inner a {
@@ -211,8 +211,8 @@ p.logo {
     width: 100%
 }
 
-.similar-cases h3 {
-    margin: 20px 0 10px;
+.similar-cases h2 {
+    margin: 30px 0 16px;
     color: var(--black);
 }
 
@@ -282,7 +282,7 @@ p.logo {
 }
 
 .case-content h2 {
-    max-width: 960px;
+    max-width: 28ch;
     text-align: center;
     align-self: center;
 }
@@ -309,7 +309,7 @@ p.white-text {
 @media screen and (orientation: portrait) {
     .case-content__inner {
         gap: var(--case-margin-portrait);
-        padding: var(--case-margin-portrait) 0;
+        padding: 7vh 0 var(--case-margin-portrait);
     }
 }
 
@@ -324,7 +324,12 @@ p.white-text {
     .case-hero__inner {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20vh 5vw 2vh;
+        padding: 15vh 5vw 2vh;
+    }
+
+    .case-hero__inner h6 {
+        opacity: 65%;
+        filter: saturate(150%);
     }
 
     .case-hero__inner p {
@@ -332,15 +337,11 @@ p.white-text {
         max-width: 100%;
     }
 
-
-    .case-content__inner {
-        width: 100%;
-    }
-
     .similar-cases__inner {
         flex-direction: column;
         align-items: flex-start;
-        gap: 80px;
+        gap: var(--case-margin-portrait);
+        padding: var(--case-margin-portrait) 0;
     }
 
     .similar-cases__inner {
@@ -356,7 +357,7 @@ p.white-text {
     }
 
     nav .nav-items p {
-        padding: 16px 4px;
+        padding: 24px 4px;
     }
 
     nav .nav-items > :nth-of-type(-n + 3) {

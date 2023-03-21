@@ -215,7 +215,7 @@ img {
     .case-content__inner > :nth-child(13) img:last-of-type,
     .case-content__inner > :nth-child(23) img:last-of-type  {
         max-width: 100%;
-        margin: 30% 0 0;
+        margin: var(--case-margin-portrait) 0 0;
     }
 
     .case-content__inner > :nth-child(4),
@@ -252,7 +252,6 @@ img {
     .case-content .case-content__inner > * {
         width: 100%;
         flex-direction: column;
-        align-items: center;
         max-width: 100%;
         margin: 0;
     }

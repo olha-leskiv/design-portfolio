@@ -15,6 +15,12 @@ img {
     height: auto;
 }
 
+/* Hero */
+
+/* .case-hero__inner h6 {
+    color: #417c99;
+} */
+
 /* Case Content */
 
 .case-content :nth-child(4) {
@@ -24,12 +30,13 @@ img {
 .case-content :nth-child(8) {
     background-color: white;
     align-self: flex-end;
-    padding: 70px;
+    padding: 10%;
+    position: relative;
 }
 
 .case-content :nth-child(9) {
     background-color: white;
-    padding: 80px 100px 70px;
+    padding: 10% 13% 10%;
     align-self: flex-start;
 }
 
@@ -42,14 +49,14 @@ img {
 .case-content :nth-child(10) div:first-of-type {
     align-self: flex-end;
     background-color: white;
-    padding: 0 70px;
+    padding: 0 10%;
     margin-top: 290px;
 }
 
 .case-content :nth-child(10) div:last-of-type {
     align-self: flex-start;
     background-color: white;
-    padding: 70px 50px;
+    padding: 10% 8%;
 }
 
 .case-content :nth-child(13) {
@@ -76,7 +83,7 @@ img {
     width: 75%;
     align-self: center;
     background-color: var(--dark-gray);
-    padding: 150px;
+    padding: 10%;
 }
 
 .case-content :nth-child(17) video {
@@ -86,9 +93,34 @@ img {
 .case-content :nth-child(18) {
     align-self: flex-start;
     background-color: white;
-    padding: 90px;
+    padding: 7%;
+    max-width: 60%;
 }
 
 .case-content :nth-child(19) {
     align-self: flex-end;
+    max-width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .case-content__inner > :nth-child(10) div:first-of-type,
+    .case-content__inner > :nth-child(14) img:first-of-type  {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .case-content__inner > :nth-child(10) div:last-of-type,
+    .case-content__inner > :nth-child(14) img:last-of-type {
+        max-width: 100%;
+        margin: var(--case-margin-portrait) 0 0;
+    }
+
+    .case-content .case-content__inner > * {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
 }

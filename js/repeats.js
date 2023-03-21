@@ -8,7 +8,7 @@ navBarContainer.innerHTML =  `
 <div class="nav-items">
     <a href="${url}#philosophy"><p>Philosophy</p></a>
     <a href="${url}#robopay"><p>Projects</p></a>
-    <a href="#"><p>Download CV</p></a>
+    <a href="#" style="display: none"><p>Download CV</p></a>
     <p>|</p>
     <a href="#" onclick="openContacts()" ><p>Contact me</p></a>
 </div>
@@ -104,14 +104,14 @@ function distributeCases() {
             <a href="${left.link}">
                 <div class="similar-case">
                     <img src="${left.img.url}" alt="${left.img.alt}">
-                    <h3>${left.title}</h3>
+                    <h2>${left.title}</h2>
                     <h6>${left.type}</h6>
                 </div>
             </a>
             <a href="${right.link}">
                 <div class="similar-case">
                     <img src="${right.img.url}" alt="${right.img.alt}">
-                    <h3>${right.title}</h3>
+                    <h2>${right.title}</h2>
                     <h6>${right.type}</h6>
                 </div>
             </a>

@@ -24,6 +24,7 @@
 .hero p.small {
     position: absolute;
     bottom: 50px;
+    margin-bottom: 5vh;
 }
 
 /* Philosophy */
@@ -35,7 +36,6 @@
 
 
 .philosophy__inner {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
