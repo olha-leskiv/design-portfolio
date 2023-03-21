@@ -129,7 +129,9 @@ const cta =  `
             <a href="mailto:hello.leskiv@gmail.com">hello.leskiv@gmail.com</a>
         </h3>
         <div class="cta-social">
-            <a href="https://www.behance.net/olleskiv" target="_blank">Behance</a>•<a href="https://www.facebook.com/profile.php?id=100004758335422" target="_blank">Facebook</a>•<a href="https://www.linkedin.com/in/olha-leskiv-606022101/" target="_blank">LinkedIn</a>
+            <p class="big">
+                <a href="https://www.behance.net/olleskiv" target="_blank">Behance</a>•<a href="https://www.facebook.com/profile.php?id=100004758335422" target="_blank">Facebook</a>•<a href="https://www.linkedin.com/in/olha-leskiv-606022101/" target="_blank">LinkedIn</a>
+            </p>
         </div>
     </div>
 </div>`;
@@ -142,15 +144,17 @@ let contacts = document.createElement('section');
 contacts.className = 'popup cta unvisible';
 contacts.innerHTML = `
     <div class="container">
-        <div class="cta__inner">
-            <h3>
-                Let's get in touch <br>
-                <a href="mailto:hello.leskiv@gmail.com">hello.leskiv@gmail.com</a>
-            </h3>
-            <div class="cta-social">
+    <div class="cta__inner">
+        <h3>
+            Let's get in touch <br>
+            <a href="mailto:hello.leskiv@gmail.com">hello.leskiv@gmail.com</a>
+        </h3>
+        <div class="cta-social">
+            <p class="big">
                 <a href="https://www.behance.net/olleskiv" target="_blank">Behance</a>•<a href="https://www.facebook.com/profile.php?id=100004758335422" target="_blank">Facebook</a>•<a href="https://www.linkedin.com/in/olha-leskiv-606022101/" target="_blank">LinkedIn</a>
-            </div>
+            </p>
         </div>
+    </div>
     </div>
     <svg onclick="closeContacts()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 `

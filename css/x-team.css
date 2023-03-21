@@ -145,3 +145,36 @@ img {
     max-width: 25%;
     margin-top: 250px;
 }
+
+@media screen and (max-width: 600px) {
+
+    .case-content__inner > :nth-child(3) img:first-of-type,
+    .case-content__inner > :nth-child(4) img:first-of-type,
+    .case-content__inner > :nth-child(6) img:first-of-type,
+    .case-content__inner > :nth-child(8) img:first-of-type,
+    .case-content__inner > :nth-child(9) img:first-of-type,
+    .case-content__inner > :nth-child(13) img:first-of-type,
+    .case-content__inner > :nth-child(14) img:first-of-type  {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .case-content__inner > :nth-child(3) img:last-of-type,
+    .case-content__inner > :nth-child(4) img:last-of-type,
+    .case-content__inner > :nth-child(6) img:last-of-type,
+    .case-content__inner > :nth-child(8) img:last-of-type,
+    .case-content__inner > :nth-child(9) img:last-of-type,
+    .case-content__inner > :nth-child(13) img:last-of-type,
+    .case-content__inner > :nth-child(14) img:last-of-type  {
+        max-width: 100%;
+        margin: 30% 0 0;
+    }
+
+    .case-content .case-content__inner > * {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
+}

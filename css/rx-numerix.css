@@ -48,7 +48,7 @@ img {
     padding: 10%;
     align-items: center;
     text-align: left;
-    gap: 10%;
+    gap: 40px;
 }
 
 .case-content__inner > :nth-child(7) img {
@@ -58,6 +58,7 @@ img {
 
 .case-content__inner > :nth-child(7) video {
     max-height: 800px;
+    max-width: 80%;
     border-radius: 12%;
 }
 
@@ -99,6 +100,50 @@ img {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .case-content__inner > :nth-child(5) {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .case-content__inner > :nth-child(5) p {
+        margin-top: 40px;
+        margin-left: 10%;
+        position: initial;
+        max-width: 100%;
+    }
+
+    .case-content__inner > :nth-child(9) h3 {
+        position: initial;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .case-content__inner > :nth-child(4) img:first-of-type,
+    .case-content__inner > :nth-child(11) img:first-of-type,
+    .case-content__inner > :nth-child(13) img:first-of-type  {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .case-content__inner > :nth-child(4) img:last-of-type,
+    .case-content__inner > :nth-child(11) img:last-of-type,
+    .case-content__inner > :nth-child(13) img:last-of-type  {
+        max-width: 100%;
+        margin: 30% 0 0;
+    }
+
+    .case-content .case-content__inner > * {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
 }
 
 

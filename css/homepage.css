@@ -17,7 +17,7 @@
 }
 
 .hero h1 {
-    max-width: 540px;
+    max-width: 13ch;
     margin-bottom: 32px;
 }
 
@@ -45,10 +45,13 @@
     margin-bottom: 21px;
 }
 
+.philosophy h2 {
+    max-width: 32ch;
+}
+
 .philosophy-philosophy {
     margin-bottom: 10vh;
     margin-left: 10%;
-    max-width: 1140px;
 }
 
 .philosophy-skills {
@@ -71,12 +74,28 @@ span.orange {
     align-items: center;
 }
 
-.case-img-right {
+section.case:nth-of-type(even) .case__inner {
+    justify-content: flex-start;
+}
+
+section.case:nth-of-type(even) img {
+    order: 1;
+}
+
+section.case:nth-of-type(even) .case-info {
+    order: 2;
+}
+
+section.case:nth-of-type(odd) .case__inner {
     justify-content: space-between;
 }
-     
-.case-img-left {
-    column-gap: 10%;
+
+section.case:nth-of-type(odd) .case-info {
+    order: 1;
+}
+
+section.case:nth-of-type(odd) img {
+    order: 2;
 }
 
 .case img {
@@ -85,7 +104,7 @@ span.orange {
     height: auto;
 }
 
-.case-content-right {
+.case-info {
     margin-left: 10%;
 }
 
@@ -128,6 +147,7 @@ span.orange {
 
 .concepts-grid {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     max-width: 100%;
@@ -141,11 +161,8 @@ span.orange {
     height: auto;
 }
 
-@media screen and (max-width: 1000px) {
-    nav nva-items{
-        display: none;
-    }
-    
+@media screen and (max-width: 1024px) {
+   
     .case__inner {
         flex-direction: column;
         gap: 6vh;
@@ -153,13 +170,17 @@ span.orange {
         padding: 8vh 0;
     }
 
-    .case img {
+    .case-info {
+        margin-left: 0;
+    }
+
+    section.case .case__inner img {
         order: 1;
         width: 100%;
         justify-self: start;
     }
 
-    .case__inner .case-info {
+    section.case .case__inner .case-info {
         order: 2;
         justify-self: end;
         margin-left: none;
@@ -175,12 +196,13 @@ span.orange {
     }
     
     .concepts-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        max-width: 100%;
-        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
         margin: 60px 16px 0;
     }
+}
 
+@media screen and (max-width: 530px) {
+    .concepts-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
