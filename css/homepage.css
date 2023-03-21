@@ -14,6 +14,7 @@
     align-items: center;
     text-align: center;
     min-height: 100%;
+    margin-bottom: 5.5vh;
 }
 
 .hero h1 {
@@ -24,7 +25,6 @@
 .hero p.small {
     position: absolute;
     bottom: 50px;
-    margin-bottom: 5vh;
 }
 
 /* Philosophy */
@@ -142,7 +142,7 @@ section.case:nth-of-type(odd) img {
 
 .concepts {
     background-color: var(--black);
-    padding: 80px 0 0;
+    padding: 80px 0;
 }
 
 .concepts-grid {
