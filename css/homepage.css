@@ -1,0 +1,186 @@
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+}
+
+.hero h1 {
+    max-width: 540px;
+    margin-bottom: 32px;
+}
+
+.hero p.small {
+    position: absolute;
+    bottom: 50px;
+}
+
+/* Philosophy */
+
+.philosophy {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 32.38%);
+    padding: 10vh 16px;
+}
+
+
+.philosophy__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy h6 {
+    margin-bottom: 21px;
+}
+
+.philosophy-philosophy {
+    margin-bottom: 10vh;
+    margin-left: 10%;
+    max-width: 1140px;
+}
+
+.philosophy-skills {
+    margin-left: 30%;
+}
+
+span.orange {
+    color: var(--orange);
+}
+
+/* Cases */
+
+.case {
+    background-color: white;
+}
+
+.case__inner {
+    padding: 18vh 0;
+    display: flex;
+    align-items: center;
+}
+
+.case-img-right {
+    justify-content: space-between;
+}
+     
+.case-img-left {
+    column-gap: 10%;
+}
+
+.case img {
+    max-width: 800px;
+    width: 65%;
+    height: auto;
+}
+
+.case-content-right {
+    margin-left: 10%;
+}
+
+.case h2 {
+    margin: 14px 0 40px;
+}
+
+.case-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.case-buttons svg {
+    display: inline-block;
+    stroke: var(--black);
+    stroke-width: 2;
+}
+
+.case a.tetriary  {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--black);
+}
+
+.case a.tetriary:hover {
+    color: var(--button-hover);
+    text-decoration: underline;
+}
+
+
+/* Concepts */
+
+.concepts {
+    background-color: var(--black);
+    padding: 80px 0 0;
+}
+
+.concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 100%;
+    gap: 16px;
+    margin: 60px 60px 0;
+}
+
+.concepts-grid img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    nav nva-items{
+        display: none;
+    }
+    
+    .case__inner {
+        flex-direction: column;
+        gap: 6vh;
+        align-items: center;
+        padding: 8vh 0;
+    }
+
+    .case img {
+        order: 1;
+        width: 100%;
+        justify-self: start;
+    }
+
+    .case__inner .case-info {
+        order: 2;
+        justify-self: end;
+        margin-left: none;
+        justify-content: start;
+    }
+
+    .case__inner h2, .case__inner h6 {
+        text-align: center;
+    }  
+
+    .case__inner .case-buttons {
+        justify-content: center;
+    }
+    
+    .concepts-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        max-width: 100%;
+        gap: 16px;
+        margin: 60px 16px 0;
+    }
+
+}

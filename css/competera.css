@@ -1,0 +1,94 @@
+:root {
+    --bg: #edf1f3;
+    --dark-gray: #222222;
+}
+
+body {
+    background-image: url(../sources/competera/hero-bg.svg);
+    background-color: var(--bg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Case Content */
+
+.case-content :nth-child(4) {
+    max-width: 75%;
+}
+
+.case-content :nth-child(8) {
+    background-color: white;
+    align-self: flex-end;
+    padding: 70px;
+}
+
+.case-content :nth-child(9) {
+    background-color: white;
+    padding: 80px 100px 70px;
+    align-self: flex-start;
+}
+
+.case-content :nth-child(10) {
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.case-content :nth-child(10) div:first-of-type {
+    align-self: flex-end;
+    background-color: white;
+    padding: 0 70px;
+    margin-top: 290px;
+}
+
+.case-content :nth-child(10) div:last-of-type {
+    align-self: flex-start;
+    background-color: white;
+    padding: 70px 50px;
+}
+
+.case-content :nth-child(13) {
+    align-self: flex-end;
+    max-width: 50%;
+}
+
+.case-content :nth-child(14) {
+    display: flex;
+    gap: 10%;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.case-content :nth-child(14) :first-child {
+    max-width: 70%;
+}
+
+.case-content :nth-child(14) :last-child {
+    max-width: 15%;
+}
+
+.case-content :nth-child(17) {
+    width: 75%;
+    align-self: center;
+    background-color: var(--dark-gray);
+    padding: 150px;
+}
+
+.case-content :nth-child(17) video {
+    width: 100%;
+}
+
+.case-content :nth-child(18) {
+    align-self: flex-start;
+    background-color: white;
+    padding: 90px;
+}
+
+.case-content :nth-child(19) {
+    align-self: flex-end;
+}

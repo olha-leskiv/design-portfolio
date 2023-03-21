@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Vollkorn:wght@400;700&display=swap');
+
+:root {
+    --orange: #F5B111;
+    --black: #1D1D1D;
+    --link-gray: #b9b9b9;
+    --button-hover: #303030;
+} 
+
+/* Global */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+    background-image: url(../sources/Hero\ bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--black);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    min-height: fit-content;
+}
+
+img {
+    width: 100%
+}
+
+section {
+    padding: 0 16px;
+}
+
+/* Buttons and links */
+
+a.button {
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 2px;
+    background: var(--black);
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+a.button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Fonts */
+
+h1 {
+    font-size: clamp(3rem, 7vh, 5rem);
+    font-weight: 400;
+    line-height: 122%;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 5vh, 3.75rem);
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h3 {
+    font-size: clamp(2rem, 3vh, 2.5rem);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+h4 {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p.big {
+    font-family: 'PT Sans', sans-serif;
+    font-size: clamp(1rem, 6vw, 1.8rem);
+    font-weight: 400;
+    line-height: 160%;
+}
+
+p.small {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+h6 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+/* Nav */
+
+nav {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+p.logo {
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+.nav-items {
+    display: flex;
+    gap: 10px;
+} 
+
+.nav-items p {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 24px 15px;
+    color: var(--black);
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+    color: var(--button-hover);
+}
+
+/* Popup */
+
+.popup {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 400ms;
+    z-index: 10px;
+}
+
+.popup .cta__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.popup svg {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+    stroke: var(--link-gray);
+    stroke-width: 2;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Similar cases */
+
+.similar-cases {
+    background-color: white;
+    padding: 160px 0 120px;
+}
+
+.similar-cases__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.similar-cases__inner a {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    transition: 300ms;
+}
+
+.similar-cases__inner a:hover {
+   transform: translate(0, -30px);
+}
+
+.similar-cases img {
+    width: 100%
+}
+
+.similar-cases h3 {
+    margin: 20px 0 10px;
+    color: var(--black);
+}
+
+.similar-cases h6 {
+    text-transform: uppercase;
+}
+
+/* CTA */
+
+.cta {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--button-hover);
+}
+
+.cta__inner {
+    padding: 160px 0;
+    color: white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cta a {
+    font-weight: 700;
+    color: var(--link-gray);
+}
+
+.cta a:hover {
+    color: var(--orange);
+}
+
+.cta-social a {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 15px;
+}
+
+/* Case Hero */
+
+.case-hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30vh 0 27vh;
+}
+
+.case-hero p {
+    max-width: 50%;
+    margin-left: 40px;
+}
+
+.case-hero h6 {
+    margin-bottom: 16px;
+    color: var(--black)
+}
+
+/* Case Content */
+
+.case-content__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+    padding: 0 0 300px;
+}
+
+.case-content h2 {
+    max-width: 960px;
+    text-align: center;
+    align-self: center;
+}
+
+/* Overwrites */
+
+.hidden {
+    display: none;
+}
+
+.unvisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.white-text {
+    color: white;
+}
+
+p.white-text {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        padding: 0 16px;
+    }
+
+    nav .nav-items p {
+        padding: 16px 4px;
+    }
+
+    nav .nav-items > :nth-of-type(-n + 3) {
+        display: none;
+    }
+}

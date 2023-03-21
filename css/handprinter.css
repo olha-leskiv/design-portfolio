@@ -1,0 +1,189 @@
+:root {
+    --bg: #EDF2F3;
+    --dark-green: #344442;
+    --dark-gray: #1a2023;
+}
+
+body {
+    background-image: url(../sources/handprinter/handprinter-hero.svg);
+    background-color: var(--bg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Case Content */
+
+.case-content__inner > :nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    max-width: 680px;
+    background-color: var(--dark-green);
+    
+    background-image: url(../sources/handprinter/case-4-fingerprint.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    padding: 150px 80px 200px;
+}
+
+.case-content__inner > :nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+    background-color: var(--dark-gray);
+    max-width: 85%;
+
+    padding: 80px 100px 0px;
+}
+
+.case-content__inner > :nth-child(5) img {
+    margin-top: 80px;
+}
+
+.case-content__inner > :nth-child(8) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    max-width: 680px;
+    background-color: var(--dark-green);
+    
+    background-image: url(../sources/handprinter/case-4-fingerprint.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    padding: 150px 80px 200px;
+}
+
+.case-content__inner > :nth-child(9) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+    background-color: var(--dark-gray);
+    max-width: 70%;
+
+    padding: 80px 100px 100px;
+}
+
+.case-content__inner > :nth-child(9) img {
+    margin-top: 80px;
+}
+
+.case-content__inner > :nth-child(11) {
+    max-width: 80%;
+}
+
+.case-content__inner > :nth-child(13) {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 204px max-content;;
+    gap: 10%;
+}
+
+.case-content__inner > :nth-child(13) :last-child {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.case-content__inner > :nth-child(14) {
+    max-width: 75%;
+    align-self: center;
+}
+
+.case-content__inner > :nth-child(16) {
+    max-width: 75%;
+    align-self: flex-end;
+}
+
+.case-content__inner > :nth-child(17) {
+    max-width: 60%;
+    align-self: flex-start;
+}
+
+.case-content__inner > :nth-child(19) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    max-width: 680px;
+    background-color: var(--dark-green);
+    
+    background-image: url(../sources/handprinter/case-4-fingerprint.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    padding: 150px 80px 200px;
+}
+
+.case-content__inner > :nth-child(20) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+    background-color: var(--dark-gray);
+    max-width: 85%;
+
+    padding: 80px 100px 120px;
+}
+
+.case-content__inner > :nth-child(20)>div {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.case-content__inner > :nth-child(20) .twenty-first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.case-content__inner > :nth-child(20) .twenty-second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--dark-green);
+    border-radius: 8px;
+    padding: 35px 50px 50px;
+} 
+
+.case-content__inner > :nth-child(20) .twenty-third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.case-content__inner > :nth-child(20) img{
+    max-width: 35%;
+}
+
+.case-content__inner > :nth-child(23) {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 204px max-content;;
+    gap: 10%;
+}
+
+.case-content__inner > :nth-child(23) :last-child {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.case-content__inner > :nth-child(24) {
+    align-self: center;
+    max-width: 60% ;
+}
