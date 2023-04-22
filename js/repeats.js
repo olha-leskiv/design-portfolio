@@ -7,7 +7,8 @@ navBarContainer.innerHTML =  `
 <a href='${url}' ><p class="logo">Olha Leskiv</p><a>
 <div class="nav-items">
     <a href="${url}#philosophy"><p>Philosophy</p></a>
-    <a href="${url}#robopay"><p>Projects</p></a>
+    <a href="${url}#robopay"><p>Design Projects</p></a>
+    <a href="https://olha-leskiv.github.io/js-projects/"><p>Front-end Projects</p></a>
     <a href="#" style="display: none"><p>Download CV</p></a>
     <p>|</p>
     <a href="#" onclick="openContacts()" ><p>Contact me</p></a>
