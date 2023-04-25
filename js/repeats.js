@@ -1,13 +1,13 @@
 // Navbar
 const navBarContainer = document.getElementById('navBarContainer');
-let currentPage = window.location.pathname.split("/").pop();
-const url = currentPage==='index.html' ? '' : '../index.html';
+let currentPage = document.querySelector('.homepage');
+const url = currentPage ? '' : '../index.html';
 
 navBarContainer.innerHTML =  `    
 <a href='${url}' ><p class="logo">Olha Leskiv</p><a>
 <div class="nav-items">
     <a href="${url}#philosophy"><p>Philosophy</p></a>
-    <a href="${url}#robopay"><p>Design Projects</p></a>
+    <a href="${url}#handprinter"><p>Design Projects</p></a>
     <a href="https://olha-leskiv.github.io/js-projects/"><p>Front-end Projects</p></a>
     <a href="#" style="display: none"><p>Download CV</p></a>
     <p>|</p>
