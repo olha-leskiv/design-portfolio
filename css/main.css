@@ -99,6 +99,59 @@ a.button.progress:hover::before {
 a.button.disabled {
     background-color: var(--link-gray);
     cursor: not-allowed;
+    display: inline-block;
+}
+
+a.button.disabled::after {
+    content: 'Ask about this project in the interview';
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 12px);
+    transform: translate(-50%, 6px);
+    width: fit-content;
+    max-width: min(520px, calc(100vw - 32px));
+    min-width: min(280px, calc(100vw - 48px));
+    padding: 14px 18px 14px 20px;
+    background: #fff;
+    color: var(--black);
+    border: 1px solid var(--link-gray);
+    border-left: 4px solid var(--orange);
+    border-radius: 6px;
+    box-shadow:
+        0 16px 48px color-mix(in srgb, var(--black) 18%, transparent),
+        0 4px 12px color-mix(in srgb, var(--black) 10%, transparent);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: left;
+    white-space: normal;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 220ms ease,
+        visibility 220ms ease,
+        transform 220ms ease,
+        box-shadow 220ms ease;
+    z-index: 40;
+}
+
+a.button.disabled:hover {
+    overflow: visible;
+}
+
+a.button.disabled:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    box-shadow:
+        0 20px 56px color-mix(in srgb, var(--black) 22%, transparent),
+        0 6px 16px color-mix(in srgb, var(--black) 12%, transparent);
+}
+
+a.button.disabled:hover::before {
+    transform: translateX(-100%) rotate(50deg);
 }
 
 a.button:hover:not(.disabled):not(.progress) {
