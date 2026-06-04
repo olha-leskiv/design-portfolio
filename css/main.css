@@ -34,6 +34,10 @@ img {
     width: 100%
 }
 
+.case img {
+  border-radius: 6px;
+}
+
 section {
     padding: 0 16px;
 }
@@ -55,7 +59,49 @@ a.button {
     overflow: hidden;
 }
 
-a.button:hover {
+a.button.progress {
+    background-color: var(--link-gray);
+    cursor: not-allowed;
+}
+
+a.button.progress::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background: var(--black);
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transform:  skewX(30deg);
+}
+
+a.button.progress:after {
+    opacity: 0.1;
+    animation: button-progress-line 1.2s ease-in-out infinite;
+}
+
+a.button.progress:hover::before {
+    transform: translateX(-100%) rotate(50deg);
+}
+
+@keyframes button-progress-line {
+    0% {
+        left: -40%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a.button.disabled {
+    background-color: var(--link-gray);
+    cursor: not-allowed;
+}
+
+a.button:hover:not(.disabled):not(.progress) {
     background-color: var(--button-hover);
 }
 
@@ -76,6 +122,16 @@ a.button:hover:before {
     transform: translateX(100%) rotate(50deg);
 }
 
+a.tetriary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+a.tetriary svg {
+    display: inline-block;
+    flex-shrink: 0;
+}
 /* Fonts */
 
 h1 {
